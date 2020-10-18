@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: TimesNewRoman;}
+* {box-sizing: border-box;}
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 500px;
+  padding: 16px;
+  background-color: white;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #ccffff;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<body style="background-color:AntiqueWhite;">
+<body>
+<h1 style="color:White;text-align:center;"><u>Art Gallery</u></h1>
+<h1 style="color:AntiqueWhite;text-align:center;"><u>Welcome to Art Gallery</u></h1>
+<h3 style="color:White;"><b>Registration</b></h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+  <br> <label for="mobileno">Mobile Number</label>
+    <input type="integer" id="mobileno" name="mobileno" placeholder="Your Mobile Number.."></br>
+
+    <label for="city">City</label>
+    <select id="city" name="city">
+      <option value="amravati">Amravti</option>
+      <option value="aurangabad">Aurangabad</option>
+      <option value="mumbai">Mumbai</option>    
+      <option value="nagpur">Nagpur</option>
+      <option value="pune">Pune</option>
+    </select>
+ <label for="District">District</label>
+    <select id="district" name="district">
+      <option value="andhrapradesh">Andhra Pradesh</option>
+      <option value="Gujarat">Gujrat</option>
+      <option value="maharashtra">Maharashtra</option>    
+      <option value="Rajasthan">Rajasthan</option>
+    </select>
+
+<label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="india">India</option>
+      <option value="australia">Australia</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Address</label>
+    <textarea id="address" name="address" placeholder="Your address.." style="height:100px"></textarea>
+  <button type="submit" class="btn"><a href="https://artgallerywebsite.github.io/TheHangingArts.github.io/TheHangingArtswebsite.html">submit</a></button>
+  </form>
+</div>
+
+<div class="w3-content w3-section" style="max-width:900px">
+  <img class="mySlides w3-animate-bottom" src="https://media-cdn.tripadvisor.com/media/photo-s/06/49/0a/33/vietnam-art-gallery.jpg" style="width:100%">
+  <img class="mySlides w3-animate-top" src="https://www.wfgmountainrentals.com/custimages/Art%20Cellar%20Gallery.jpg" style="width:100%">
+  <img class="mySlides w3-animate-top" src="https://media-cdn.tripadvisor.com/media/photo-s/11/e5/04/43/gallery-wall-at-the-italian.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script>
+<style>
+body {
+  background-image: url('https://image.freepik.com/free-vector/interior-wooden-room-with-frames-lamp_1441-4033.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+</head>
+<body>
