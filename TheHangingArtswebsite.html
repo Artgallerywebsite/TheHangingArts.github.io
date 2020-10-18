@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Art Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.mySlides {display:none;}
+body {font-family: Liberation Serif;}
+.navbar {
+  width: 100%;
+  background-color: #ffffcc;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 16px;
+  color: #000099;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background-color:  #000099;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+a.navbuttons{
+  color:Blue;
+ 
+}
+</style>
+</style>
+</head>
+<style>
+body {
+  background-image: url('https://image.freepik.com/free-vector/interior-wooden-room-with-frames-lamp_1441-4033.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+<body>
+<h1 style="color:White;text-align:center;font-family:TimesNewroman"><u>The Hanging Arts</u></h1>
+<h1 style="color:AntiqueWhite;text-align:center;font-family:TimesNewroman"><u>Welcome to The Hanging Art's Gallery</u></h1>
+<div class="navbar">
+  <a href="#"><i class="fa fa-home"></i> Home</a> 
+  <a  class="navbuttons" href="https://artgallerywebsite.github.io/TheHangingArts.github.io/TheHangingArts_Artwork.html"><i class="fa fa-laptop"></i> ArtWork</a> 
+  <a class="navbuttons" href="https://artgallerywebsite.github.io/ArtGalleryweb.github.io/GalleryArt_Collections.html"><i class="fa fa-shopping-cart"></i> Collection</a> 
+  <a class="navbuttons" href=" https://artgallerywebsite.github.io/ArtGalleryweb.github.io/GalleryArt_Aboutus"><i class="fa fa-user"></i> About US</a>
+</div>
+<style>
+body, html {
+  height: 100%;
+  font-family: times NewRoman;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="bg-img">
+  <form action="/action_page.php" class="container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn"><a href="https://artgallerywebsite.github.io/ArtGalleryweb.github.io/TheHangingArts_Reg">Login</a></button>
+  </form>
+</div>
+<div class="w3-content w3-section" style="max-width:800px">
+  <img class="mySlides" src="https://www.thepalaceonwheels.org/blog/wp-content/uploads/2018/05/Samanvai-Art-Gallery.jpg" style="width:100%">
+  <img class="mySlides" src="https://www.wearegurgaon.com/wp-content/uploads/2018/12/peacock-art-gallery-gurgaon.jpg" style="width:100%">
+  <img class="mySlides" src="https://d4qwptktddc5f.cloudfront.net/easy_thumbnails/thumbs_Interior-Design-American-Kennel-Club-Museum-of-the-Dog-New-York-01-0319.jpg.770x0_q95.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 20 seconds
+}
+</script>
+</body>
+</html>
