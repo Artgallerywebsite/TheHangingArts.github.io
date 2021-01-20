@@ -1,5 +1,5 @@
 .container {
-  width: 100%;
+  width: 70%;
   margin: auto;
   padding: 10px;
 }
@@ -56,15 +56,15 @@
   padding: 10px 0;
   background: none;
   border: none;
-  border-bottom: 1px solid #990000;
-  color: #990000;
+  border-bottom: 1px solid White;
+  color: White;
   font-size: 14px;
   outline: none;
   transition: border-color .2s;
 }
 
 .app-form-control::placeholder {
-  color: Antique White;
+  color:White;
 }
 
 .app-form-control:focus {
@@ -76,13 +76,13 @@
   border: none;
   margin-left: 20px;
   color: White;
-  font-size: 14px;
+  font-size: 22px;
   cursor: pointer;
   outline: none;
 }
 
 .app-form-button:hover {
-  color: #990000;
+  color: White;
 }
 
 @media screen and (max-width: 520px) {
